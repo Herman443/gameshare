@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Gameshare</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mitch</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
+  
+  <style>
+   body, html {
+    height: cover;
+}
+  body { 
+    /* The image used */
+    background-image: url("");
 
+    /* Full height */
+    height: cover; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  </style>
+  
   <body>
-    <%= yield %>
+  <%= render 'shared/navbar' %>
+    <div class="container">
+      <%= yield %>
+    </div>
+    
   </body>
 </html>
