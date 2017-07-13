@@ -23,7 +23,7 @@
         <td><%= game.genre %></td>
         <td><%= game.console %></td>
         <td><%= game.description %></td>
-        <td><%= game.user %></td>
+        <td><%= game.user.email %></td>
         <td><%= link_to 'Show', game %></td>
         <td><%= link_to 'Edit', edit_game_path(game) %></td>
         <td><%= link_to 'Destroy', game, method: :delete, data: { confirm: 'Are you sure?' } %></td>
