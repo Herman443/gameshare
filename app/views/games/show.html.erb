@@ -1,34 +1,67 @@
-<p id="notice"><%= notice %></p>
+<h1><%= @game.title %></h1>
+<br>
+<div class="row">
+  <div class="col-sm-6 col-md-4">
 
-<p>
-  <strong>Title:</strong>
-  <%= @game.title %>
-</p>
+  </div>
+</div>
 
-<p>
-  <strong>Year:</strong>
-  <%= @game.year %>
-</p>
+ <div class="container">
 
-<p>
-  <strong>Genre:</strong>
-  <%= @game.genre %>
-</p>
+        <!-- Portfolio Item Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header"><%= @game.title %>
+                    <br><small><%= @game.genre %></small><br>
+                    <small><%= @game.year %></small><br>
+                    <small><%= @game.description %></small>
+                </h1>
+            </div>
+          </div>
+        <!-- /.row -->
 
-<p>
-  <strong>Console:</strong>
-  <%= @game.console %>
-</p>
+        <!-- Portfolio Item Row -->
+        <div class="row">
 
-<p>
-  <strong>Description:</strong>
-  <%= @game.description %>
-</p>
+            <div class="col-md-8">
+                <img class="img-responsive" src="http://placehold.it/750x500" alt="">
+            </div>
 
-<p>
-  <strong>User:</strong>
-  <%= @game.user %>
-</p>
+         </div>
 
+        <!-- /.row -->
+
+        <!-- Related Projects Row -->
+        <div class="row">
+
+            <div class="col-lg-12">
+                <h3 class="page-header">Other Games</h3>
+            </div>
+
+            <div class="col-sm-3 col-xs-6">
+                <a href="#">
+                    <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
+                </a>
+            </div>
+
+            <div class="col-sm-3 col-xs-6">
+                <a href="#">
+                    <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
+                </a>
+            </div>
+
+            <div class="col-sm-3 col-xs-6">
+                <a href="#">
+                    <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
+                </a>
+            </div>
+
+            <div class="col-sm-3 col-xs-6">
+                <a href="#">
+                    <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
+                </a>
+            </div>
+
+        </div>
 <%= link_to 'Edit', edit_game_path(@game) %> |
 <%= link_to 'Back', games_path %>
