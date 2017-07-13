@@ -21,9 +21,18 @@
     <%= form.number_field :year, class: "form-control input-lg" %>
   </div>
 
-  <div class="form-group">
-    <%= form.label :genre %><br>
-    <%= form.text_field :genre, class: "form-control input-lg" %>
+    <div class="form-group" style="max-width: 400px">
+    <h5>Genre:</h5></font>
+    <%= form.select :genre, [["Action", "Action"],
+                            ["Action-adventure", "Action-adventure"],
+                            ["Adventure", "Adventure"],
+                            ["Role-playing", "Role-playing"],
+                            ["Simulation", "Simulation"],
+                            ["Strategy", "Strategy"],
+                            ["Sports", "Sports"],
+                            ["Idle gaming", "Idle gaming"],
+                            ["Other notable genres", "Other notable genres"],
+                            ], prompt: "Select genre...", id: :song_genre %>
   </div>
 
   <div class="form-group">
