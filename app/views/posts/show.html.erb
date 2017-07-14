@@ -12,12 +12,12 @@
 
 <p>
   <strong>User:</strong>
-  <%= @post.user %>
+  <%= @post.user.email %>
 </p>
 
 <p>
   <strong>Game:</strong>
-  <%= @post.game %>
+  <%= @post.game.title %>
 </p>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
