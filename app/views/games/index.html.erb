@@ -4,11 +4,18 @@
     <div class="row">
 
         <div class="col-md-3">
-            <p class="lead">All Games</p>
+            <h1 class="lead">All games</h1>
             <div class="list-group">
-                <a href="#" class="list-group-item">Category 1</a>
-                <a href="#" class="list-group-item">Category 2</a>
-                <a href="#" class="list-group-item">Category 3</a>
+                <%= link_to 'Action', genres_action_path, class: "list-group-item" %>
+                <%= link_to 'Action adventure', genres_action_adventure_path, class: "list-group-item" %>
+                <%= link_to 'First-person shooter', genres_first_person_shooter_path, class: "list-group-item" %>
+                <%= link_to 'Adventrue', genres_adventure_path, class: "list-group-item" %>
+                <%= link_to 'Role playing', genres_role_playing_path, class: "list-group-item" %>
+                <%= link_to 'Simulation', genres_simulation_path, class: "list-group-item" %>
+                <%= link_to 'Strategy', genres_strategy_path, class: "list-group-item" %>
+                <%= link_to 'Sports', genres_sports_path, class: "list-group-item" %>
+                <%= link_to 'Idle gaming', genres_idle_gaming_path, class: "list-group-item" %>
+                <%= link_to 'Other genres', genres_other_genres_path, class: "list-group-item" %>
             </div>
         </div>
 

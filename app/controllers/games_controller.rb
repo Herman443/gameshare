@@ -14,8 +14,9 @@ class GamesController < ApplicationController
   end
 
   # GET /games/new
+  # REMEMBER TO CHANGE THE USER VALUE!!
   def new
-    @game = User.find(1).games.build
+    @game = User.find(2).games.build
   end
 
   # GET /games/1/edit
