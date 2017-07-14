@@ -11,6 +11,7 @@ class GamesController < ApplicationController
   # GET /games/1
   # GET /games/1.json
   def show
+    @posts = Post.all.where(game_id: @game.id)
   end
 
   # GET /games/new
