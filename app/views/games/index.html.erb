@@ -10,7 +10,7 @@
                 <%= link_to 'Action adventure', genres_action_adventure_path, class: "list-group-item" %>
                 <%= link_to 'First-person shooter', genres_first_person_shooter_path, class: "list-group-item" %>
                 <%= link_to 'Adventrue', genres_adventure_path, class: "list-group-item" %>
-                <%= link_to 'Role playing', genres_role_playing_path, class: "list-group-item" %>
+                <%= link_to 'Role-playing', genres_role_playing_path, class: "list-group-item" %>
                 <%= link_to 'Simulation', genres_simulation_path, class: "list-group-item" %>
                 <%= link_to 'Strategy', genres_strategy_path, class: "list-group-item" %>
                 <%= link_to 'Sports', genres_sports_path, class: "list-group-item" %>
@@ -25,7 +25,7 @@
             <% @games.each do |game| %>
                 <div class="col-sm-4 col-lg-4 col-md-4">
                     <div class="thumbnail">
-                        <img src="http://placehold.it/320x150" alt="">
+                        <%= image_tag game.image(:thumb) %>
                         <div class="caption">
                             
                             <h4><%= link_to game.title, game %></a></h4>

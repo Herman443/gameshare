@@ -15,7 +15,7 @@ class PagesController < ApplicationController
   end
   
   def role_playing_games
-    @games = Game.all.where(genre: "Role Playing")
+    @games = Game.all.where(genre: "Role-playing")
   end
   
   def simulation_games

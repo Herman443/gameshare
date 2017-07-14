@@ -24,7 +24,7 @@
     <div class="form-group" style="max-width: 400px">
     <h5>Genre:</h5></font>
     <%= form.select :genre, [["Action", "Action"],
-                            ["Action-adventure", "Action-adventure"],
+                            ["Action adventure", "Action adventure"],
                             ["First-person shooter", "First-person shooter"],
                             ["Adventure", "Adventure"],
                             ["Role-playing", "Role-playing"],
@@ -44,6 +44,11 @@
   <div class="form-group">
     <%= form.label :description %><br>
     <%= form.text_area :description, class: "form-control input-lg" %>
+  </div>
+  
+  <div class="form-group">
+    <%= form.label :image %>
+    <%= form.file_field :image, id:"file-input" %>
   </div>
 
   <div class="form-group"><br>
